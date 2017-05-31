@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<th colspan="2">使用此窗体提交搜索请求：</th>
+<tr><td>花名：</td><td><input name='phrase' type='TEXT' width='60'></td></tr>
+<tr><td>花语：</td><td><input name='letters' type='TEXT'></td></tr>
+<th colspan="2"><br />也可使用HTML5 input 类型(type=)作新的表单输入类型：<br />
+
+</table>
+<p>准备就绪后, 单击此按钮：</p>
+<p><input value='搞吧！' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
